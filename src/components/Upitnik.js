@@ -111,7 +111,7 @@ const Upitnik = () => {
     reRender();
   };
 
-  const handleSubmitQuiz = () => {
+  const handleSubmit = () => {
     if (title !== "" && date !== "") {
       if (
         questions.length !== 0 &&
@@ -160,8 +160,8 @@ const Upitnik = () => {
         setOpenError={setOpenError}
         openError={openError}
       />
-      <div className="w-full h-full flex justify-center">
-        <div className="flex flex-col bg-gray-100 shadow-md px-16 py-12">
+      <div className="w-full h-screen flex justify-center items-center">
+        <div className="flex flex-col bg-white shadow-md rounded-md px-16 py-12">
           <h2 className="text-left text-blue-500 font-bold text-2xl pb-10">
             Kreiraj Upitnik
           </h2>
@@ -217,7 +217,7 @@ const Upitnik = () => {
             </button>
             <button
               className="border border-blue-500 bg-blue-500 text-white hover:bg-transparent hover:text-blue-500 transition-colors px-4 py-2 rounded-sm"
-              onClick={(e) => handleSubmitQuiz(e)}
+              onClick={(e) => handleSubmit(e)}
             >
               Zavrsi Upitnik
             </button>
