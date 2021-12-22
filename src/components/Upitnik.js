@@ -123,7 +123,7 @@ const Upitnik = () => {
           ) === true &&
           questions.every((question) => question.answers.length > 0) === true
         ) {
-          fetch("http://projectest.xyz/api/surveys", {
+          fetch("https://projectest.xyz/api/surveys", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
